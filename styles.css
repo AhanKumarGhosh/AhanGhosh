@@ -1,0 +1,311 @@
+/* Global Styles */
+body {
+    /* background-color: #64bff3; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-image: linear-gradient(90deg, rgba(59, 139, 199, 1) 22%, rgba(40, 190, 208, 1) 47%, rgba(0, 212, 255, 1) 100%) !important;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo>img {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-toggler-icon {
+    background-color: #1499e1;
+}
+
+.navbar-nav {
+    margin-top: 5px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Introduction Section Styles */
+
+.display-4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Project Section Styles */
+.card {
+    border: none;
+}
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* Contact Section Styles */
+.container {
+    margin-top: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 100px 0;
+    }
+
+    .display-4 {
+        font-size: 28px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+}
+/* Glassmorphism effect for the photo */
+.glassmorphism {
+    background: rgba(175, 75, 232, 0.638); /* Background with transparency */
+    border-radius: 50%; /* Rounded corners for a circular photo */
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 4px 6px rgb(68, 68, 79); /* Shadow effect */
+    margin: 0 auto; /* Center the photo horizontally */
+}
+/* background: linear-gradient(136deg, #98d8cd, #8080cc); */
+
+    .vdo {
+        height: 68%;
+    }
+
+
+body {
+    margin: 0;
+    /* overflow: hidden; */
+
+}
+
+.video-container {
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10spx);
+    -webkit-filter: blur(10spx);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* Add a semi-transparent overlay */
+}
+
+
+
+    background: rgba(0, 0, 0, 0.3)};
+    /* Add a semi-transparent overlay */
+
+
+
+/* Glassmorphism effect for the photo */
+.glassmorphism {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgb(25, 10, 123);
+    margin: 0 auto;
+    position: relative; /* Change this to relative */
+    z-index: 2; /* Change this to 2 to bring it above the video */
+}
+
+/* Additional styling for your photo */
+.glassmorphism img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Button styling */
+.whatsapp-button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46f20d;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+    position: relative; /* Change this to relative */
+    z-index: 2; /* Change this to 2 to bring it above the video */
+}
+
+.whatsapp-button:hover {
+    background-color: hsl(99, 100%, 71%);
+}
+
+/* WhatsApp logo styling */
+.whatsapp-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Apply these styles to the .vdo (video) class */
+.vdo {
+    position: absolute; /* Change this to absolute */
+    z-index: 0;
+    width: 100%;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* height: 100%; */
+}
+
+/* Apply these styles to the h1, p, and a elements */
+h1,
+p,
+a {
+    position: relative;
+    z-index: 2;
+}
+
+video {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.jumbotron {
+    background-size: cover;
+    color: #086986;
+    padding: 150px 0;
+}
+.social-icons {
+    position: fixed;
+    z-index: 1000; /* Ensures icons are on top of other content */
+}
+
+.social-icons a {
+    display: block;
+    width: auto; /* Adjust the size */
+    height: auto; /* Adjust the size */
+    margin: 20px;
+    border-radius: 50%;
+    /* background-color: #0073e6; Adjust the background color */
+    /* color: #fff; Adjust the icon color */
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Zoom in effect on hover */
+    box-shadow: 0 0 15px rgba(0, 115, 230, 0.7); /* Add a subtle shadow on hover */
+}
+
+/* Add animations for the floating effect */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.social-icons a:nth-child(1) {
+    animation: float 6s ease 0s infinite;
+    -webkit-animation: float 6s ease 0s infinite;
+}
+
+.social-icons a:nth-child(2) {
+    animation: float 8s ease 0s infinite;
+    -webkit-animation: float 8s ease 0s infinite;
+}
+
+.social-icons a:nth-child(3) {
+    animation: float 10s ease 0s infinite;
+    -webkit-animation: float 10s ease 0s infinite;
+}
+.social-icons a:nth-child(4) {
+    animation: float 12s ease 0s infinite;
+    -webkit-animation: float 12s ease 0s infinite;
+}
+.social-icons a:nth-child(5) {
+    animation: float 14s ease 0s infinite;
+    -webkit-animation: float 14s ease 0s infinite;
+}
+
+/* Add more animations for additional icons */
+

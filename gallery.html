@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="photos">
+            <div class="photo">
+                <img src="Images/photographs/288588109_745763543236324_2885822545171855920_n.webp" alt="Photo 1">
+            </div>
+            <div class="photo">
+                <img src="Images/photographs/290217016_3230976917174582_5280335161269658534_n.webp" alt="Photo 2">
+            </div>
+            <div class="photo">
+                <img src="Images/photographs/AHAN_KUMAR_GHOSH_01.jpg" alt="Photo 3">
+            </div>
+            <!-- Add more photos as needed -->
+        </div>
+    </div>
+
+    <div class="doodle-art-background">
+        <!-- Add your doodle art background here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const photos = document.querySelectorAll(".photo");
+
+            function slidePhotos() {
+                let currentPhoto = 0;
+                setInterval(function () {
+                    photos[currentPhoto].style.display = "none";
+                    currentPhoto = (currentPhoto + 1) % photos.length;
+                    photos[currentPhoto].style.display = "block";
+                }, 3000); // Change photos every 3 seconds
+            }
+
+            slidePhotos();
+        });
+    </script>
+</body>
+</html>

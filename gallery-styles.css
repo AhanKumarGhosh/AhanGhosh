@@ -1,0 +1,34 @@
+/* Add your CSS styling for the gallery and doodle art background here */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust the height as needed */
+    margin-top: 50px; /* Adjust the margin-top as needed */
+}
+
+.photos {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    display: none;
+}
+
+.photo img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.doodle-art-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Add your background styling here */
+}
